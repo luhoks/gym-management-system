@@ -108,8 +108,8 @@ const BookingForm = ({ newBooking, coaches, handleInputChange, handleAddBooking,
       onChange={handleInputChange}
     >
       <option value="Coach">Coach</option>
-      <option value="Rehab Session">Rehab Session</option>
-      <option value="Sport Massage">Sport Massage</option>
+      <option value="Rehab Session">Service 1</option>
+      <option value="Sport Massage">Service 2</option>
     </select>
     {newBooking.type === 'Coach' && (
       <select
