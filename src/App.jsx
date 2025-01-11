@@ -1,16 +1,16 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Header from "./components/header";
-import BookingsPage from "./pages/BookingsPage/BookingsPage";
-import Class from "./pages/Classes/Classes";
-import AddCoach from "./pages/Coaches/AddCoach";
-import CoachDetail from "./pages/Coaches/CoachDetails";
 import Coaches from "./pages/Coaches/Coaches";
+import CoachDetail from "./pages/Coaches/CoachDetails";
+import AddCoach from "./pages/Coaches/AddCoach";
 import Facilities from "./pages/Facilities/Facilities";
 import Membership from './pages/Membership/Membership';
 import Services from './pages/Services/Services';
 import Dashboard from "./pages/dashboard";
-
+import Class from "./pages/Classes/Classes";
+import BookingsPage from "./pages/BookingsPage/BookingsPage";
+import Forecasting from "./pages/Forecasting/Forecasting";
 
 const App = () => {
   return (
@@ -27,6 +27,7 @@ const App = () => {
           <Route path="/Booking" element={<BookingsPage/>} />
           <Route path="/Coach-Details" element={<CoachDetail/>} />
           <Route path="/Add-coach" element={<AddCoach/>} />
+          <Route path="/forecasting" element={<Forecasting/>} />
         </Routes>
       </Router>
     </div>
