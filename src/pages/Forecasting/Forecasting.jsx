@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { LineChart, Line, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'; /* install yarn add recharts*/
-
 import './Forecasting.css';
 
 const Forecasting = () => {

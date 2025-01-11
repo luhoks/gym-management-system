@@ -65,6 +65,18 @@ function Header() {
             <span>FACILITIES</span>
           </Link>
         </li>
+        <li>
+          <Link className="nav-link" to="/Attendees">
+            <i className="fas fa-people-group"></i>
+            <span>ATTENDEES</span>
+          </Link>
+        </li>
+        <li>
+          <Link className="nav-link" to="/Links">
+            <i className="fas fa-link"></i>
+            <span>LINKS</span>
+          </Link>
+        </li>
       </ul>
     </nav>
   );

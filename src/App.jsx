@@ -11,6 +11,8 @@ import Dashboard from "./pages/dashboard";
 import Class from "./pages/Classes/Classes";
 import BookingsPage from "./pages/BookingsPage/BookingsPage";
 import Forecasting from "./pages/Forecasting/Forecasting";
+import Attendees from "./pages/Attendees/Attendees";
+import Links from "./pages/Links/Links";
 
 const App = () => {
   return (
@@ -28,6 +30,8 @@ const App = () => {
           <Route path="/Coach-Details" element={<CoachDetail/>} />
           <Route path="/Add-coach" element={<AddCoach/>} />
           <Route path="/forecasting" element={<Forecasting/>} />
+          <Route path="/attendees" element={<Attendees/>} />
+          <Route path="/links" element={<Links/>} />
         </Routes>
       </Router>
     </div>
