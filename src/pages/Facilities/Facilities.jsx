@@ -9,7 +9,7 @@ const Facility = ({
       {facility.photo && <img src={facility.photo} alt="Facility" className="facility-photo" />}
       <div className="facility-text">
         <strong>{facility.name}</strong>
-        <p>{facility.description}</p> {/* Ensure description is rendered within <p> tag */}
+        <p>{facility.description}</p> 
       </div>
       <div className="facility-actions">
         <button onClick={() => startEditFacility(index)}>✏️</button>

@@ -1,9 +1,9 @@
-import '@fortawesome/fontawesome-free/css/all.min.css'; // Import FontAwesome
 import React from 'react';
-import { Bar, BarChart, Cell, Legend, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
-import Client from './clients-chart';
 import './dashboard.css';
+import Client from './clients-chart';
 import Revenue from './revenue-chart';
+import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import '@fortawesome/fontawesome-free/css/all.min.css';  // Import FontAwesome
 
 const Dashboard = () => {
   const data = [
@@ -22,7 +22,7 @@ const Dashboard = () => {
     <div className='dashboard'>
     <div className='sidebar'>
       <div className='logo-container'>
-        <img id="gym-logo" src={require('../Assets/samplelogo.png')} alt="logo" />
+        <img id="gym-logo" src={require('../Assets/samplelogo.png')} alt="Energya" />
       </div>
       <ul className="menu">
         <li>
@@ -77,6 +77,18 @@ const Dashboard = () => {
           <a href="/Facilities" className="nav-link">
             <i className="fas fa-dumbbell"></i>
             <span>FACILITIES</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Attendees" className="nav-link">
+            <i className="fas fa-people-group"></i>
+            <span>ATTENDEES</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Links" className="nav-link">
+            <i className="fas fa-link"></i>
+            <span>LINKS</span>
           </a>
         </li>
       </ul>
