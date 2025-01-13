@@ -19,7 +19,7 @@ const LinksTab = () => {
 
   const handleEditLinkClick = (index) => {
     setShowAddLinkModal(true);
-    setIsEditing(true); // Mark as editing
+    setIsEditing(true); 
     setEditIndex(index); // Set index of the link being edited
     setTitle(links[index].title); // Pre-fill title
     setLink(links[index].link); // Pre-fill link
@@ -52,7 +52,7 @@ const LinksTab = () => {
 
   return (
     <div className="links-container">
-      <header className="top-header">Attendees</header>
+      <header className="top-header">Links</header>
 
       <div className="links-content">
         <div className="announcement-section">
