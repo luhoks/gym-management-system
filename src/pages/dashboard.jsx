@@ -7,8 +7,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';  // Import FontAwesome
 
 const Dashboard = () => {
   const data = [
-    { name: 'Female', value: 100, color: '#FF8C00' }, // Orange color
-    { name: 'Male', value: 150, color: '#000000' }    // Black color
+    { name: 'Female', value: 100, color: '#FF8C00' }, 
+    { name: 'Male', value: 150, color: '#000000' }   
   ];
 
   const planData = [
@@ -29,6 +29,12 @@ const Dashboard = () => {
           <a href="/" className="nav-link">
             <i className="fas fa-tachometer-alt"></i>
             <span>DASHBOARD</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Register" className="nav-link">
+            <i className="fas fa-arrow-right-to-bracket"></i>
+            <span>REGISTER</span>
           </a>
         </li>
         <li>
@@ -89,6 +95,12 @@ const Dashboard = () => {
           <a href="/Links" className="nav-link">
             <i className="fas fa-link"></i>
             <span>LINKS</span>
+          </a>
+        </li>
+        <li>
+          <a href="/User" className="nav-link">
+            <i className="fas fa-user-secret"></i>
+            <span>USER ACCOUNT</span>
           </a>
         </li>
       </ul>

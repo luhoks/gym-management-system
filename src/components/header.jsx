@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import logo from "../Assets/samplelogo.png";
 import './header.css';
 
-function Header() {
+function header() {
   return (
     <nav className="sidebarheader">
       <div className="logo-container">
@@ -13,68 +13,80 @@ function Header() {
       <ul className="menu">
         <li>
           <Link className="nav-link" to="/">
-            <i className="fas fa-tachometer-alt"></i>
+            <i className="fa-solid fa-tachometer-alt"></i>
             <span>DASHBOARD</span>
           </Link>
         </li>
         <li>
+          <Link className="nav-link" to="/register">
+            <i className="fa-solid fa-arrow-right-to-bracket"></i>
+            <span>REGISTER</span>
+          </Link>
+        </li>
+        <li>
           <Link className="nav-link" to="/Membership">
-            <i className="fas fa-users"></i>
+            <i className="fa-solid fa-users"></i>
             <span>MEMBERSHIP</span>
           </Link>
         </li>
         <li>
           <Link className="nav-link" to="/Revenue">
-            <i className="fas fa-dollar-sign"></i>
+            <i className="fa-solid fa-dollar-sign"></i>
             <span>REVENUE</span>
           </Link>
         </li>
         <li>
           <Link className="nav-link" to="/Booking">
-            <i className="fas fa-calendar-check"></i>
+            <i className="fa-solid fa-calendar-check"></i>
             <span>BOOKINGS</span>
           </Link>
         </li>
         <li>
           <Link className="nav-link" to="/Forecasting">
-            <i className="fas fa-chart-line"></i>
+            <i className="fa-solid fa-chart-line"></i>
             <span>FORECASTING</span>
           </Link>
         </li>
         <li>
           <Link className="nav-link" to="/Coaches">
-            <i className="fas fa-user-tie"></i>
+            <i className="fa-solid fa-user-tie"></i>
             <span>COACHES</span>
           </Link>
         </li>
         <li>
           <Link className="nav-link" to="/Classes">
-            <i className="fas fa-chalkboard-teacher"></i>
+            <i className="fa-solid fa-chalkboard-teacher"></i>
             <span>CLASSES</span>
           </Link>
         </li>
         <li>
           <Link className="nav-link" to="/Services">
-            <i className="fas fa-concierge-bell"></i>
+            <i className="fa-solid fa-concierge-bell"></i>
             <span>SERVICES</span>
           </Link>
         </li>
         <li>
           <Link className="nav-link" to="/Facilities">
-            <i className="fas fa-dumbbell"></i>
+            <i className="fa-solid fa-dumbbell"></i>
             <span>FACILITIES</span>
           </Link>
         </li>
         <li>
           <Link className="nav-link" to="/Attendees">
-            <i className="fas fa-people-group"></i>
+            <i className="fa-solid fa-people-group"></i>
             <span>ATTENDEES</span>
           </Link>
         </li>
         <li>
           <Link className="nav-link" to="/Links">
-            <i className="fas fa-link"></i>
+            <i className="fa-solid fa-link"></i>
             <span>LINKS</span>
+          </Link>
+        </li>
+        <li>
+          <Link className="nav-link" to="/account">
+            <i className="fa-solid fa-user-secret"></i>
+            <span>USER ACCOUNT</span>
           </Link>
         </li>
       </ul>
@@ -82,4 +94,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default header;
